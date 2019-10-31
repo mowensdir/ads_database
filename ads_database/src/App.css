@@ -20,3 +20,169 @@
 .App-link {
   color: #09d3ac;
 }
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: arial, helvetica, verdana;
+}
+html, body {
+  width: 100%;
+}
+body.print-window {
+  padding-top: 30px;
+}
+h3 {
+  margin: 10px 0 15px;
+}
+header {
+  width: 100%;
+  height: 35px;
+  display: block;
+  background-color: #aaf;
+}
+.sidebar {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 11px;
+  border-right: 1px solid #aaf;
+}
+main {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 255px);
+  padding: 12px;
+}
+footer {
+  width: 100%;
+  background-color: #aaf;
+  padding: 6px;
+}
+.header-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.header-left {
+  width: 250px;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 5px;
+  text-shadow: 1px 1px 1px #66f;
+}
+.header-search-container {
+  padding: 3px;
+}
+.search-text { 
+  padding: 5px;
+  border: 1px solid #66f;
+  outline: 1px solid #00f;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.action-link {
+  font-size: 12px;
+  display: inline-block;
+  width: 250px; 
+}
+.files {
+  font-size: 12px;
+  width: 100%;
+  border: 1px solid #44f;
+  margin-top: 12px;
+  padding: 8px;
+}
+.main-inner {
+  width: 100%;
+  padding: 8px;
+}
+.results-container {
+  margin-bottom: 20px;
+}
+.results-container p {
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.filedetail-label {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  color: #888;
+}
+.filedetail-value {
+  display: inline-block;
+  vertical-align: top;
+  color: #444;
+}
+.file-details p {
+  margin-bottom: 1px;
+}
+.files-sidebar {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 4px;
+}
+.driver-files-content {
+  width: calc(100% - 255px);
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.tab-pane.show {
+  display: block;
+}
+.tab-pane.hidden {
+  display: none;
+}
+.fname-link {
+  font-size: 12px;
+}
+.tab-pane {
+  padding: 20px 0;
+}
+#violationsreport td, #violationsreport th {
+  padding: 4px 8px;
+}
+.body-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 515px;
+}
+.nav-tabs {
+  border-bottom: 1px solid #aaa;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-color: #aaa #aaa #fff;
+}
+.print-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+}
+@media print {
+  .print-button {
+    display: none;
+  }
+}
+#violationsreport {
+  position: relative;
+}
+.no-results {
+  font-style: italic;
+}
+.violations-block {
+  margin-bottom: 22px;
+}
+.context-table tr:nth-child(even) {
+  background-color: #eee;
+}
