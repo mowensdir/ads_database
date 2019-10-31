@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './Home/Home.js';
+import Home from './Home/Home.js';
 
 function App() {
   return (
