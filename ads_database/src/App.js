@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home/Home.js';
+import SideBar from './SideBar/SideBar.js';
 
 function App() {
   return (
@@ -14,12 +15,7 @@ function App() {
         </div>
       </div>
       <div class="body-container">
-        <div class="sidebar">
-          <input type="text" name="search-text" class="search-text" placeholder="Search" />
-          <div id="results-content" class="results-content">
-          </div>
-        </div>
-
+        <SideBar></SideBar>
         <main>
           <div class="main-content" id="main-content">
           </div>
