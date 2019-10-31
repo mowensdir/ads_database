@@ -2,6 +2,12 @@ import React from 'react';
 import './SideBar.css';
 
 class SideBar extends React.Component {
+	componentWillMount() {
+		document.addEventListener("keydown", this.searchBoxKeyDown.bind(this));
+	}
+	componentWillUnmount() {
+		document.removeEventListener("keydown", this.searchBoxKeyDown.bind(this));
+	}      
 	searchBoxKeyDown(e) {
 		console.log(e);
 	}
