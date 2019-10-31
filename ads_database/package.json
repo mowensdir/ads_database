@@ -2,6 +2,7 @@
   "name": "ads_database",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://ads-dashboard.ctcsdev.com/ads_database/ads_database/react/#",  
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
