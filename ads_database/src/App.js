@@ -5,22 +5,28 @@ import Home from './Home/Home.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Home></Home>
-      </header>
+    <div class="home">
+      <div class="header">
+        <div class="header-left header-block">
+          MICHIGAN
+        </div>
+        <div class="header-search-container header-block">
+        </div>
+      </div>
+      <div class="body-container">
+        <div class="sidebar">
+          <input type="text" name="search-text" class="search-text" placeholder="Search" />
+          <div id="results-content" class="results-content">
+          </div>
+        </div>
+
+        <main>
+          <div class="main-content" id="main-content">
+          </div>
+        </main>
+      </div>
+
+      <footer>&nbsp;</footer>
     </div>
   );
 }
