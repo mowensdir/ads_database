@@ -19,7 +19,7 @@ class SideBar extends React.Component {
 	searchOnString() {
 		fetch("/database/ajax/search.php", {
 			method: 'POST',
-			body: "searchString=" + this.state.searchString
+			body: "searchstring=" + this.state.searchString
 		})
 		.then(res => res.json())
 		.then(
