@@ -52,7 +52,7 @@ class SideBar extends React.Component {
 	          <div id="results-content" class="results-content">
 	          {this.state.searchItems.Drivers ? this.state.searchItems.Drivers.map(item => (
 	            <li key={item.DriverId}>
-	              {item.FirstName} {item.MiddleName} {item.LastName}
+	              <a href="#" class="driver-link action-link">{item.FirstName} {item.MiddleName} {item.LastName}</a>
 	            </li>
 	          )) : ''}
 	          </div>
