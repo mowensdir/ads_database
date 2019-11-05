@@ -50,7 +50,7 @@ class SideBar extends React.Component {
 		return (
 	        <div class="sidebar">
 	          <input type="text" value={this.searchString} name="search-text" class="search-text" placeholder="Search" onKeyDown={this.seachBoxKeyDown} />
-	          <div id="results-content" class="results-content" if={this.state.searchItems.Drivers}>
+	          <div id="results-content" class="results-content" if={this.state.searchItems.Drivers} >
 		          <p>DRIVERS</p>
 		          {this.state.searchItems.Drivers.map(item => (
 		            <li key={item.DriverId}>
@@ -58,7 +58,7 @@ class SideBar extends React.Component {
 		            </li>
 		          ))}
 	          </div>	          
-	          <div id="results-content" class="results-content" if={this.state.searchItems.Services}>
+	          <div id="results-content" class="results-content" if={this.state.searchItems.Services} >
 	          	<p>SERVICES</p>
 	            {this.state.searchItems.Services.map(item => (
 		            <li key={item.ServiceID}>
@@ -66,7 +66,7 @@ class SideBar extends React.Component {
 		            </li>
 		        ))}
 	          </div>	          
-	          <div id="results-content" class="results-content" if={this.state.searchItems.Files}>
+	          <div id="results-content" class="results-content" if={this.state.searchItems.Files} >
 		          <p>Files</p>
 		          {this.state.searchItems.Files.map(item => (
 		            <li key={item.FileID}>
