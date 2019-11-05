@@ -83,10 +83,10 @@ footer {
   width: 100%;
   padding: 8px;
 }
-.results-container {
+.results-content {
   margin-bottom: 20px;
 }
-.results-container p {
+.results-content p {
   margin-bottom: 5px;
   letter-spacing: 2px;
 }

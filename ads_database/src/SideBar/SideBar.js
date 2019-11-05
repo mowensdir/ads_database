@@ -66,7 +66,7 @@ class SideBar extends React.Component {
 		          )) : ''}
 	          </div>	          
 	          <div id="results-content" class="results-content">
-		          <p></p>
+		          <p>Files</p>
 		          {this.state.searchItems.Files ? this.state.searchItems.Files.map(item => (
 		            <li key={item.FileID}>
 		              <a href="#" class="driver-link action-link">{item.FileName}</a>
