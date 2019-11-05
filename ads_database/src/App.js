@@ -9,7 +9,7 @@ function App() {
     <div class="home">
       <div class="header">
         <div class="header-left header-block">
-          MICHIGAN
+          ADS Database
         </div>
         <div class="header-search-container header-block">
         </div>
