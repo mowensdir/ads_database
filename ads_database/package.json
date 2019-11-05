@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://ads-dashboard.ctcsdev.com/ads_database/ads_database/react/#",
   "dependencies": {
+    "rc-if": "0.0.12",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
