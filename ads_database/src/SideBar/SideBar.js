@@ -22,6 +22,7 @@ class SideBar extends React.Component {
 		};
 		fetch("/database/ajax/search.php", {
 			method: 'POST',
+			mode: 'cors',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify(postData)
 		})
