@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {Switch} from 'react-router';
 
 function App() {
+  console.log(this);
   return (
     <div class="home">
       <div class="header">
