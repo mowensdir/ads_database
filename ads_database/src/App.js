@@ -24,7 +24,7 @@ function App() {
             <div class="main-content" id="main-content">
               <Router basename={window.location.pathname}>
                 <Switch>
-                  <Route path="dashboard" component={Home}/>
+                  <Route path={`${this.props.location.pathname}/dashboard`} component={Home}/>
                 </Switch>
               </Router>
             </div>
