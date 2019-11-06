@@ -9,6 +9,7 @@ import {Switch} from 'react-router';
 
 class App extends Component {
   render() {
+    console.log(this);
     return (
       <div class="home">
         <div class="header">
@@ -24,7 +25,7 @@ class App extends Component {
               <div class="main-content" id="main-content">
                 <Router>
                   <Switch>
-                    <Route path={`${window.location.pathname}/dashboard`} component={Home}/>
+                    <Route path={`/dashboard`} component={Home}/>
                   </Switch>
                 </Router>
               </div>
