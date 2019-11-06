@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home/Home.js';
+import Home from './Home/Home';
 import ReactDOM from 'react-dom';
-import SideBar from './SideBar/SideBar.js';
+import SideBar from './SideBar/SideBar';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
