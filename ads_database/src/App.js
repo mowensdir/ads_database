@@ -24,7 +24,7 @@ class App extends Component {
               <div class="main-content" id="main-content">
                 <Router>
                   <Switch>
-                    <Route path={`${this.props.location.pathname}/dashboard`} component={Home}/>
+                    <Route path={`${window.location.pathname}/dashboard`} component={Home}/>
                   </Switch>
                 </Router>
               </div>
