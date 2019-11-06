@@ -5,7 +5,7 @@ class Driver extends Component {
 
 	constructor(props) {
 		console.log('preprops', props);
-		super(props);
+		super();
 		this.state = {
 			response: {}
 		}
