@@ -8,7 +8,7 @@ class Driver extends Component {
 		this.state = {
 			response: {}
 		}
-		console.log(this);
+		console.log(this, props);
 		let postData = {
 			response: this.props.match.driverid
 		};
