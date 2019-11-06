@@ -27,7 +27,7 @@ class App extends Component {
                   <Switch>
                     <Route path={'/dashboard'} component={Home}/>
                     <Route path={'/driver'} component={Driver}/>
-                    <Route path={'/driver/:driverid'} component={Driver}/>
+                    <Route exact path={'/driver/:driverid'} component={Driver}/>
                   </Switch>
                 </Router>
               </div>
