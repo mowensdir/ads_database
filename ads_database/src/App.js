@@ -5,8 +5,7 @@ import Home from './Home/Home';
 import Driver from './Driver/Driver';
 import ReactDOM from 'react-dom';
 import SideBar from './SideBar/SideBar';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {Switch} from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
