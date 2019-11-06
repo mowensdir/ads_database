@@ -4,14 +4,12 @@ import './Driver.css';
 class Driver extends Component {
 
 	constructor(props) {
-		console.log('preprops', props);
 		super(props);
 		this.state = {
 			response: {}
 		}
-		console.log(this, props);
 		let postData = {
-			response: this.props.match.params.driverid
+			driverid: this.props.match.params.driverid
 		};
 		fetch("/database/ajax/drivers.php", {
 			method: 'POST',
@@ -30,12 +28,7 @@ class Driver extends Component {
 			}
 		)
 	}
-	componentDidMount(){
-		console.log('cdm', this);
-	}
-	componentWillReceiveProps(nextProps) {
-		console.log(nextProps);
-	}
+
 	render() {
 		if(!this.state.response.Driver) {
 			return null;
