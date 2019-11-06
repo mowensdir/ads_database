@@ -11,7 +11,7 @@ class Driver extends Component {
 		}
 		console.log(this, props);
 		let postData = {
-			response: props.match.driverid
+			response: this.props.match.params.driverid
 		};
 		fetch("/database/ajax/drivers.php", {
 			method: 'POST',
