@@ -18,11 +18,11 @@ function App() {
       <div class="body-container">
         <SideBar></SideBar>
         <main>
-          <Router>
             <div class="main-content" id="main-content">
-            <Route path="/dashboard" component={Home}></Route>
+              <Router>
+                <Route path="/dashboard" component={Home}></Route>
+              </Router>
             </div>
-          </Router>
         </main>
       </div>
 
