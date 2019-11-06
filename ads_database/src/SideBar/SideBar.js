@@ -41,7 +41,7 @@ class SideBar extends React.Component {
 	searchBoxKeyDown(e) {
 		if(e.keyCode === 13) {
 			console.log(e);
-			this.state.searchString = 'Matt';
+			this.state.searchString = e.target.value;
 			this.searchOnString();
 		}
 	}
