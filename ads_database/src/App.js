@@ -20,7 +20,7 @@ function App() {
         <main>
             <div class="main-content" id="main-content">
               <Router>
-                <Route path="/dashboard" component={Home}></Route>
+                <Route path="/dashboard"><Home></Home></Route>
               </Router>
             </div>
         </main>
