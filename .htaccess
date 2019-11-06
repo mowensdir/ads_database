@@ -8,12 +8,6 @@
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 
-
-  <Directory "/srv/web/htdocs/ads_database/ads_database">
-  	AllowOverride All
-  </Directory>
-
-
 </IfModule>
 
 Options -MultiViews
