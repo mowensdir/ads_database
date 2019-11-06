@@ -26,6 +26,7 @@ class App extends Component {
                 <Router basename={'ads_database/ads_database/react/'}>
                   <Switch>
                     <Route path={'/dashboard'} component={Home}/>
+                    <Route path={'/driver'} component={Driver}/>
                     <Route path={'/driver/:driverid'} component={Driver}/>
                   </Switch>
                 </Router>
