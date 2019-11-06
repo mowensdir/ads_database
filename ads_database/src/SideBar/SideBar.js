@@ -47,7 +47,7 @@ class SideBar extends React.Component {
 	}
 
 	resultsContent(section, displayField, idField) {
-		if(!this.state.searchItems || !this.state.searchItems[section]) {
+		if(!this.state.searchItems || !this.state.searchItems[section] || !this.state.searchItems[section].length) {
 			return null;
 		}
 		return (
