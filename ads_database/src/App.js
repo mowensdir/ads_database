@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import ReactDOM from 'react-dom';
 import SideBar from './SideBar/SideBar';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {Switch} from 'react-router';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
         <main>
             <div class="main-content" id="main-content">
               <Router>
-                <Route path="dashboard" component={Home}/>
+                <Switch>
+                  <Route path="dashboard" component={Home}/>
+                </Switch>
               </Router>
             </div>
         </main>
