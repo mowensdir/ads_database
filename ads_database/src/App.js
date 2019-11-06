@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Home/Home.js';
 import SideBar from './SideBar/SideBar.js';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <SideBar></SideBar>
         <main>
           <div class="main-content" id="main-content">
+          <Route path="/home" component={Home}></Route>
           </div>
         </main>
       </div>
