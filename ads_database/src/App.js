@@ -23,11 +23,9 @@ class App extends Component {
           <main>
               <div class="main-content" id="main-content">
                 <Router basename={'ads_database/ads_database/react/'}>
-                  <Switch>
                     <Route path={'/dashboard'} component={Home}/>
                     <Route path={'/driver'} component={Driver}/>
                     <Route exact path={'/driver/:driverid'} component={Driver}/>
-                  </Switch>
                 </Router>
               </div>
           </main>
