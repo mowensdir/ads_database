@@ -4,6 +4,7 @@ import './Driver.css';
 class Driver extends Component {
 
 	constructor(props) {
+		console.log('preprops', props);
 		super(props);
 		this.state = {
 			response: {}
