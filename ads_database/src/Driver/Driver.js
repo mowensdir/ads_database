@@ -29,6 +29,12 @@ class Driver extends Component {
 			}
 		)
 	}
+	componentDidMount(){
+		console.log('cdm', this);
+	}
+	componentWillReceiveProps(nextProps) {
+		console.log(nextProps);
+	}
 	render() {
 		if(!this.state.response.Driver) {
 			return null;
