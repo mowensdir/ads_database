@@ -22,7 +22,7 @@ function App() {
         <SideBar></SideBar>
         <main>
             <div class="main-content" id="main-content">
-              <Router>
+              <Router basename={window.location.pathname}>
                 <Switch>
                   <Route path="dashboard" component={Home}/>
                 </Switch>
