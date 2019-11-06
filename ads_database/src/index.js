@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Home from './Home/Home';
+import {Switch} from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
