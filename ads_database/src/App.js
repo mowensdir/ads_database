@@ -23,9 +23,9 @@ class App extends Component {
           <SideBar></SideBar>
           <main>
               <div class="main-content" id="main-content">
-                <Router>
+                <Router basename={'ads_database/ads_database/react/'}>
                   <Switch>
-                    <Route path={`/dashboard`} component={Home}/>
+                    <Route path={'/dashboard'} component={Home}/>
                   </Switch>
                 </Router>
               </div>
