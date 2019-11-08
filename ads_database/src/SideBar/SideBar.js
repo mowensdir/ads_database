@@ -55,7 +55,11 @@ class SideBar extends React.Component {
 		          <p>{section.toUpperCase()}</p>
 		          {this.state.searchItems[section].map(item => (
 		            <li key={item['idField']}>
-		              <a href="#" class="driver-link action-link">{item[displayField]}</a>
+		            	{section === 'Drivers' ? (
+		              		<a href="#" class="driver-link action-link">{item['LastName']}, {item['FirstName']} {item['MiddleName']}</a>
+		            	) : (
+		              		<a href="#" class="driver-link action-link">{item[displayField]}</a>
+		            	)}
 		            </li>
 		          ))}
 	          </div>
